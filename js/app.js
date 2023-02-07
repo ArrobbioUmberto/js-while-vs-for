@@ -5,20 +5,20 @@ console.log ('ciao')
 //  Tutti gli altri valori li scartiamo (numeri pari ed eventuali NaN).
 // Una volta ottenuti tutti i 10 numeri, stampiamoli in console uno alla volta.
 let lista = []
+let ask 
 for (let i = 0; lista.length < 10; i++){
-    const askNumber = parseInt(prompt('Dimmi un numero'))
-    lista.push(askNumber)
-    console.log(lista)
-    console.log(askNumber)
-    // do {
-    //     let pari = askNumber % 2
-    //     console.log(pari)
-    //     if(pari != 0){
-    //         lista.push(askNumber)
-    //         console.log(lista)
-    //     }
-    // }
-    // while (isNaN(askNumber) || (askNumber<0)) {
+        while ((ask<0) || (isNaN(ask))) {
+        ask = parseInt(prompt('Dimmi un numero'))
+        // lista.push(askNumber)
+        console.log(ask)
+        let pari = ask % 2
+        console.log(pari)
+        if(pari != 0){
+            lista.push(ask)
+            console.log(lista)
+        }
+    }
+    
 }
 
 
