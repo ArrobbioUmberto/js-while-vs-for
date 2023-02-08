@@ -28,10 +28,9 @@ let secondoArray = []
       randomIndex = Math.floor(Math.random() * currentIndex);
       //Riduciamo di un'unità l'indice corrente
       currentIndex -= 1;
-      // Una volta che abbiamo preso l'indice casuale, invertiamo l'elemento che stiamo analizzando alla posizione corrente (currentIndex) con quello alla posizione presa casualmente (randomIndex)
-      //Variabile temporanea
+    
       secondoArray.push(primoArray[randomIndex]);
       console.log(secondoArray)
-      //Eseguiamo lo scambio
+    
     
     }
